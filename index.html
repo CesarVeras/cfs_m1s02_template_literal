@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cfs_m1s02_template_literal</title>
+</head>
+<body>
+	<h1>
+		[M1S02] Ex 4 - Usando variáveis em uma String
+	</h1>
+	<section>
+		<p>
+			<strong>
+				Crie uma ou mais variáveis e use estas em uma String por meio de concatenação ou <em>Template Literal</em>;
+			</strong>
+		</p>
+	</section>
+	<section>
+		<p data-resposta></p>
+	</section>
+	<script>
+		let nome = "Eduardo";
+		let idade = 26;
+		let mensagem = `Olá, meu nome é ${nome} e tenho ${idade} anos.`;
+		console.log(mensagem);
+		
+		let p = document.querySelector("[data-resposta]");
+		p.innerHTML = `let nome = "${nome}";<br>let idade = ${idade};<br>let mensagem = \`Olá, meu nome é \$\{nome\} e tenho \$\{idade\} anos\`;<br>console.log(mensagem);`
+	</script>
+</body>
+</html>
